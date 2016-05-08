@@ -26,6 +26,10 @@
     Line = function(activeElement, nextElement) {
         var activeCenter, activeLeft, activeTop, activeHeight, activeWidth, nextCenter, nextLeft, nextTop, tmpRight, tmpTop, topDifference;
         this.id = activeElement.attr('id');
+       
+        if(nextElement.length < 1){
+            nextElement = activeElement;
+        }
         
         activeLeft = activeElement.offset().left;
         activeWidth = activeElement.width();

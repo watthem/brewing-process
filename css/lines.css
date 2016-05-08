@@ -9,7 +9,7 @@
 	padding: 10px;
 	position: absolute;
 	transition: background-position 2s;
-	z-index: 0;
+	z-index: 0
 }
 
 @keyframes border-dance {
@@ -25,11 +25,11 @@
 
 #svg_canvas {
 	position: absolute;
-	opacity: .5;    /* top: 50%; */
+	opacity: .5;
 	top: 0;
 	left: 11%;
 	width: 78%;
-	height: 300vh;
+	height: 300vh
 }
 
 #line_1 {
@@ -37,7 +37,7 @@
 	height: 170px;
 	left: 526px;
 	top: 580px;
-	width: 183px;
+	width: 183px
 }
 
 #line_2 {
@@ -49,7 +49,7 @@
 	right: 0px;
 	top: 889px;
 	width: 210px;
-	z-index: 0;
+	z-index: 0
 }
 
 #line_3 {
@@ -58,7 +58,7 @@
 	left: 948px;
 	right: 0px;
 	top: 575px;
-	width: 330px;
+	width: 330px
 }
 
 #line_4 {
@@ -66,7 +66,7 @@
 	height: 317px;
 	right: 400px;
 	top: 843px;
-	width: 197px;
+	width: 197px
 }
 
 #line_5 {
@@ -75,14 +75,14 @@
 	height: 27px;
 	right: 629px;
 	top: 1086px;
-	width: 364px;
+	width: 364px
 }
 
 #line_6 {
 	box-shadow: inset 10px 10px 0px 0px white;
 	height: 85px;
 	top: 1325px;
-	width: 460px;
+	width: 460px
 }
 
 @media (max-width:1200px) {
@@ -165,7 +165,7 @@
 		width: 407px;
 		left: 138px;
 		animation-direction: reverse;
-		border-right: 0;
+		border-right: 0
 	}
 
 }
@@ -174,61 +174,76 @@
 	#line_1 {
 		box-shadow: inset 10px 0px 0px 0px white;
 		position: relative;
-		height: 19vh;
+		height: 240px;
 		right: 0.5vw;
-		top: 28vh;
-		width: 27vw;
-		width: 31vw;
+		top: 355px;
+		width: 31vw
 	}
 
 	#line_2 {
 		animation-direction: reverse;
 		box-shadow: inset -10px 0px 0px 0px white;
 		position: relative;
-		height: 35vh;
+		height: 200px;
 		left: 2.5vw;
-		top: 28vh;
-		width: 34vw;
+		top: 350px;
+		width: 34vw
 	}
 
 	#line_3 {
+		animation-direction: initial;
 		box-shadow: inset 10px 0px 0px 0px white;
 		position: relative;
-		height: 37vh;
+		height: 183px;
 		right: 2.5vw;
 		left: 36vw;
-		top: 28vh;
-		width: 34vw;
+		top: 368px;
+		width: 34vw
 	}
 
 	#line_4 {
 		animation-direction: reverse;
 		box-shadow: inset -10px 0px 0px 0px white;
 		position: relative;
-		height: 44vh;
+		height: 492px;
 		left: 2.5vw;
-		top: 28vh;
-		width: 34vw;
+		top: 366px;
+		width: 34vw
 	}
 
 	#line_5 {
 		box-shadow: inset 10px 0px 0px 0px white;
 		position: relative;
-		height: 42vh;
+		height: 350px;
 		right: 2.5vw;
-		left: 36vw;
-		top: 28vh;
-		width: 34vw;
+		height: 504px;
+		left: 37vw;
+		top: 391px;
+		animation-direction: inherit;
+		width: 34vw
 	}
 
 	#line_6 {
 		animation-direction: reverse;
 		box-shadow: inset -10px 0px 0px 0px white;
 		position: relative;
-		height: 40vh;
+		height: height:350px;
 		left: 2.5vw;
-		top: 28vh;
-		width: 29vw;
+		height: 528px;
+		top: 391px;
+		width: 35vw;
+	}
+
+	#line_7 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 350px;
+		right: 2.5vw;
+		height: 504px;
+		left: 37vw;
+		top: 391px;
+		animation-direction: inherit;
+		width: 34vw
 	}
 
 }
