@@ -1,0 +1,244 @@
+.grain {
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 10s;
+	animation-iteration-count: infinite;/*	transition: translate 5s ease-in-out;*/
+}
+
+.grain-pink-vector {
+	opacity: 1 !important;
+	align-self: flex-end;
+	width: 100%;
+}
+
+.dot {
+	animation: grow 2s infinite;
+	transition: all 0.2s ease-in-out;
+}
+
+.microb {
+	animation: rotate 2s infinite;
+	transition: all 5s ease-in-out;
+}
+
+.kegs-vector:hover {
+	animation: go-in ease-in-out 1s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards; /*when the spec is finished*/
+}
+
+@keyframes go-in {
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate(30px, 0px);
+	}
+
+	80% {
+		transform: translate(-10px, 0px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(-1500px, 0px);
+	}
+
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translate(0);
+	}
+
+	25% {
+		transform: translateY(-3px) translateX(3px);
+	}
+
+	50% {
+		transform: translateY(-3px) translateX(-3px);
+	}
+
+	75% {
+		transform: translateY(3px) translateX(3px);
+	}
+
+}
+
+@keyframes something {
+	from {
+		transform: perspective(0px) translate3d(0px, 0px, 0px);
+	}
+
+	/*	50% {
+			transform: perspective(500px) translate3d(10px,5px,0px);
+		}*/
+	to {
+		transform: perspective(0px) translate3d(10px, -5px, 0px);
+	}
+
+}
+
+@keyframes grow {
+	from {
+		transform: translate(0px);
+	}
+
+	65% {
+		transform: translateY(2px);
+	}
+
+	to {
+		transform: translate(0px);
+	}
+
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	65% {
+		transform: rotate(2deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+
+}
+
+.roating-arrows-vector {
+	animation: spin 10s infinite;
+}
+
+.yeast-vector {
+	animation: spin 30s infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+
+}
+
+/*.animated-line-container {
+	background-color: blue;
+	opacity: .2;
+}
+*/
+/*.animated-line-container {
+background-color: transparent;
+background-position: 0 0, 500px 100%, 0 150px, 100% 0;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%);
+margin: 0;
+padding: 10px;
+position: absolute;
+z-index: 100
+}
+
+.border {
+background-color: transparent;
+margin: 0;
+padding: 10px;
+position: absolute;
+z-index: 100
+}
+
+.up-right {
+animation-delay: 0s;
+animation-direction: normal;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-iteration-count: 3;
+animation-name: border-dance;
+animation-timing-function: linear;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%)
+}
+
+.down-right-up {
+animation: border-dance 3s 3 reverse forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, transparent, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%)
+}
+
+.up-right-down {
+animation-delay: 0s;
+animation-direction: normal;
+animation-duration: 3s;
+animation-iteration-count: 3;
+animation-name: border-dance;
+animation-timing-function: linear;
+animation: border-dance 3s 3 linear forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%)
+}
+
+.down-right {
+animation: border-dance 3s 3 linear forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%)
+}
+
+.down-left-up {
+animation: border-dance 3s 3 linear forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%)
+}
+
+.left-down {
+animation: border-dance 3s 3 reverse forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%)
+}
+
+.left-top-bottom {
+animation: border-dance 3s 3 linear forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%)
+}
+
+.bottom-left {
+animation: border-dance 3s 3 linear forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%)
+}
+
+.top-left {
+animation: border-dance 3s 3 reverse forwards;
+background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+background: linear-gradient(90deg, #f48375  50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%)
+}
+
+@keyframes border-dance {
+0% {
+background-position: 0 0, 500px 100%, 0 150px, 100% 0
+}
+
+100% {
+background-position: 500px 0, 0 100%, 0 0, 100% 150px
+}
+
+}*/
