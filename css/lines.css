@@ -24,12 +24,12 @@
 }
 
 #svg_canvas {
-	/*position: fixed;
-	width: 0;
-	height: 0;
-	top: 50%;
-	left: 50%;
-	overflow: visible;*/
+	position: absolute;
+	opacity: .5;    /* top: 50%; */
+	top: 0;
+	left: 11%;
+	width: 78%;
+	height: 300vh;
 }
 
 #line_1 {
@@ -166,10 +166,69 @@
 		left: 138px;
 		animation-direction: reverse;
 		border-right: 0;
-		border-left: 8px dashed  #f48375
 	}
 
 }
 
 @media (max-width:980px) {
+	#line_1 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 19vh;
+		right: 0.5vw;
+		top: 28vh;
+		width: 27vw;
+		width: 31vw;
+	}
+
+	#line_2 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		height: 35vh;
+		left: 2.5vw;
+		top: 28vh;
+		width: 34vw;
+	}
+
+	#line_3 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 37vh;
+		right: 2.5vw;
+		left: 36vw;
+		top: 28vh;
+		width: 34vw;
+	}
+
+	#line_4 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		height: 44vh;
+		left: 2.5vw;
+		top: 28vh;
+		width: 34vw;
+	}
+
+	#line_5 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 42vh;
+		right: 2.5vw;
+		left: 36vw;
+		top: 28vh;
+		width: 34vw;
+	}
+
+	#line_6 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		height: 40vh;
+		left: 2.5vw;
+		top: 28vh;
+		width: 29vw;
+	}
+
 }

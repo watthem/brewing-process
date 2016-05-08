@@ -36,14 +36,14 @@ body {
 }
 
 .blue-owl-brewing-process {
-	width: auto;
 	height: auto;
+	width: auto;
 }
 
 .banner {
 	background: url("../img/arrow.svg");
 	background-repeat: no-repeat;
-	background-size: 88%, contain;
+	background-size: 100%, contain;
 }
 
 h3 {
@@ -339,7 +339,8 @@ svg.roating-arrows-vector {
 	}
 
 	.brewing-step {
-		flex-basis: 100%
+		flex-basis: 100%;
+		align-self: stretch;
 	}
 
 	.flex-container {
@@ -378,5 +379,24 @@ svg.roating-arrows-vector {
 	.kegs-canning {
 		order: 8
 	}
+
+	.raise {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.blah {
+    position: relative;
+    top: -73px;
+    left: -3px;
+}
+
+.offset {
+		position: relative;
+	top: 0;
+	left: 0;
+}
+
 
 }

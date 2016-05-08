@@ -1,24 +1,32 @@
 (function() {
     var Line, borderWidth, connect, windowHeight, windowWidth;
+    var currentLine = 1;
     connect = function(element) {
         var $stepLine, line, stepLine;
         if (element.hasClass('connected')){
             return;
         }
-        // if (!element.is(':first-child') && !element.prev().hasClass('connected')) {
-        //     return;
-        // }
+        if (!element.is(':first-child') && !element.prev().hasClass('connected')) {
+            return;
+        }
         line = new Line(element, element.next());
+     
+        
+
         stepLine = '<div  class="animated-line-container" id="line_' + line.id + '"/>';
+
+      
         //   stepLine = '<div class="animated-line-container" id="' + line.id + '" style=\'display: none; position: absolute; transform: rotate( ' + line.angle + 'deg); height: 0px; left: ' + line.left + 'px; top:' + line.top + 'px; width: 0px; right: ' + line.right + 'px; animation-direction: ' + line.direction + '\'/>';
         $stepLine = $(stepLine);
         $('#svg_canvas').append($stepLine);
         $stepLine.fadeIn(20000);
         element.addClass('connected');
+    
     };
     Line = function(activeElement, nextElement) {
         var activeCenter, activeLeft, activeTop, activeHeight, activeWidth, nextCenter, nextLeft, nextTop, tmpRight, tmpTop, topDifference;
         this.id = activeElement.attr('id');
+        
         activeLeft = activeElement.offset().left;
         activeWidth = activeElement.width();
         activeHeight = activeElement.height();
@@ -59,7 +67,7 @@
             nextCenter = null;
             tmpRight = windowWidth - activeTop
         }
-        console.log(nextCenter);
+       
         this.top = tmpTop;
         this.right = tmpRight;
         this.left = activeCenter;
