@@ -133,10 +133,11 @@
 }
 
 /*.animated-line-container {
-	background-color: blue;
-	opacity: .2;
+background-color: blue;
+opacity: .2;
 }
 */
+
 /*.animated-line-container {
 background-color: transparent;
 background-position: 0 0, 500px 100%, 0 150px, 100% 0;

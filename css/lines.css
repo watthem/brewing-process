@@ -23,9 +23,18 @@
 
 }
 
+#svg_canvas {
+	/*position: fixed;
+	width: 0;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	overflow: visible;*/
+}
+
 #line_1 {
 	box-shadow: inset 0px -10px 0px 1px white;
-	height: 200px;
+	height: 170px;
 	left: 526px;
 	top: 580px;
 	width: 183px;
@@ -54,7 +63,7 @@
 
 #line_4 {
 	box-shadow: inset 10px 0px 0px 0px white;
-	height: 247px;
+	height: 317px;
 	right: 400px;
 	top: 843px;
 	width: 197px;
@@ -63,10 +72,10 @@
 #line_5 {
 	animation-direction: reverse;
 	box-shadow: inset 0px -10px 0px 0px white;
-	height: 14px;
-	right: 606px;
+	height: 27px;
+	right: 629px;
 	top: 1086px;
-	width: 370px;
+	width: 364px;
 }
 
 #line_6 {

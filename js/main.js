@@ -12,7 +12,7 @@
         stepLine = '<div  class="animated-line-container" id="line_' + line.id + '"/>';
         //   stepLine = '<div class="animated-line-container" id="' + line.id + '" style=\'display: none; position: absolute; transform: rotate( ' + line.angle + 'deg); height: 0px; left: ' + line.left + 'px; top:' + line.top + 'px; width: 0px; right: ' + line.right + 'px; animation-direction: ' + line.direction + '\'/>';
         $stepLine = $(stepLine);
-        $('.blue-owl-brewing-process').append($stepLine);
+        $('#svg_canvas').append($stepLine);
         $stepLine.fadeIn(20000);
         element.addClass('connected');
     };

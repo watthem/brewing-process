@@ -96,6 +96,7 @@ h3 {
 	transition: opacity 100s ease;
 	z-index: 100;
 	box-shadow: 9px 10px 20px -14px black;
+	right: 14px;
 }
 
 .text-container:before:hover {
@@ -247,6 +248,7 @@ svg.roating-arrows-vector {
 .fermenter {
 	order: 8;
 	flex: 3 3 25%;
+	margin-top: 50px;
 }
 
 .bright-tank {
@@ -257,6 +259,19 @@ svg.roating-arrows-vector {
 	background-size: 1000px;
 	background-position-x: left;
 	background-position-y: 0px;
+	top: 50px;
+}
+
+.raise {
+	position: relative;
+	top: -92px;
+	left: -17px;
+}
+
+.offset {
+	position: relative;
+	top: 79px;
+	left: 12px;
 }
 
 .packaging {
