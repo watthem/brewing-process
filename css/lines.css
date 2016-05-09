@@ -1,34 +1,247 @@
-.animated-line-container { background-color: transparent; background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%); background-repeat: repeat-x, repeat-x, repeat-y, repeat-y; background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px; background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px; animation: border-dance 3s 3 forwards; border: 0px; padding: 10px; position: absolute; transition: background-position 2s; z-index: 0 }
+.animated-line-container {
+	background-color: transparent;
+	background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+	background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+	animation: border-dance 3s 3 forwards;
+	border: 0px;
+	padding: 10px;
+	position: absolute;
+	transition: background-position 2s;
+	z-index: 0
+}
+
 @keyframes border-dance {
-	0% { background-position: 0 0, 500px 100%, 0 150px, 100% 0 }
-	100% { background-position: 500px 0, 0 100%, 0 0, 100% 150px }
-}
-#svg_canvas { position: absolute; opacity: .5; top: 0; left: 11%; width: 78%; height: 100%; }
-#line_1 { box-shadow: inset 0px -10px 0px 1px white; height: 170px; left: 526px; top: 580px; width: 183px }
-#line_2 { animation-direction: reverse; border-top: 0; box-shadow: inset 0px 4px 0px 0px white; height: 90px; left: 725px; right: 0px; top: 889px; width: 210px; z-index: 0 }
-#line_3 { box-shadow: inset 0px -10px 0px 1px white; height: 274px; left: 948px; right: 0px; top: 575px; width: 330px }
-#line_4 { box-shadow: inset 10px 0px 0px 0px white; height: 317px; right: 400px; top: 843px; width: 197px }
-#line_5 { animation-direction: reverse; box-shadow: inset 0px -10px 0px 0px white; height: 27px; right: 629px; top: 1086px; width: 364px }
-#line_6 { box-shadow: inset 10px 10px 0px 0px white; height: 85px; top: 1325px; width: 460px }
-@media (max-width:1200px) {
-	.miu { animation-name: higher; animation-fill-mode: forwards; animation-duration: 1200ms; animation-delay: 250ms; animation-fill-mode: forwards; animation-iteration-count: 1 }
-	@keyframes higher {
-		from { height: 200px; }
-		to { height: 485px }
+	0% {
+		background-position: 0 0, 500px 100%, 0 150px, 100% 0
 	}
-	#line_1 { position: absolute; height: 304.266px; left: 310px; top: 394.516px; width: 242px; border-bottom: 0 }
-	#line_2 { position: absolute; height: 100.51563px; left: 559px; top: 679px; width: 240px; right: 0px; border-top: 0; z-index: 50 }
-	#line_3 { position: absolute; height: 263.313px; left: 810px; top: 400px; width: 150px; right: 0px; animation-direction: reverse; border-bottom: 0 }
-	#line_4 { position: absolute; height: 244px; top: 670px; width: 48px; right: 90px; animation-direction: reverse; border-left: 0 }
-	#line_5 { position: absolute; height: 27px; top: 888px; width: 386px; right: 157px; animation-direction: reverse; border-bottom: 0; z-index: 20 }
-	#line_6 { position: absolute; height: 562px; top: 922px; width: 407px; left: 138px; animation-direction: reverse; border-right: 0 }
+
+	100% {
+		background-position: 500px 0, 0 100%, 0 0, 100% 150px
+	}
+
 }
+
+#svg_canvas {
+	position: absolute;
+	opacity: .5;
+	top: 0;
+	left: 11%;
+	width: 78%;
+	height: 100%;
+}
+
+#line_1 {
+    position: absolute;
+    top: 250px;
+    height: 250px;
+    left: 24em;
+    width: 11.5em;
+    box-shadow: inset 0px -10px 0px 1px white;
+}
+
+#line_2 {
+	animation-direction: reverse;
+	border-top: 0;
+	box-shadow: inset 0px 4px 0px 0px white;
+	height: 90px;
+	left: 725px;
+	right: 0px;
+	top: 889px;
+	width: 210px;
+	z-index: 0
+}
+
+#line_3 {
+	box-shadow: inset 0px -10px 0px 1px white;
+	height: 274px;
+	left: 948px;
+	right: 0px;
+	top: 575px;
+	width: 330px
+}
+
+#line_4 {
+	box-shadow: inset 10px 0px 0px 0px white;
+	height: 317px;
+	right: 400px;
+	top: 843px;
+	width: 197px
+}
+
+#line_5 {
+	animation-direction: reverse;
+	box-shadow: inset 0px -10px 0px 0px white;
+	height: 27px;
+	right: 629px;
+	top: 1086px;
+	width: 364px
+}
+
+#line_6 {
+	box-shadow: inset 10px 10px 0px 0px white;
+	height: 85px;
+	top: 1325px;
+	width: 460px
+}
+
+@media (max-width:1200px) {
+	.miu {
+		animation-name: higher;
+		animation-fill-mode: forwards;
+		animation-duration: 1200ms;
+		animation-delay: 250ms;
+		animation-fill-mode: forwards;
+		animation-iteration-count: 1
+	}
+
+	@keyframes higher {
+		from {
+			height: 200px;
+		}
+
+		to {
+			height: 485px
+		}
+
+	}
+
+	#line_1 {
+		position: absolute;
+		height: 304.266px;
+		left: 310px;
+		top: 394.516px;
+		width: 242px;
+		border-bottom: 0
+	}
+
+	#line_2 {
+		position: absolute;
+		height: 100.51563px;
+		left: 559px;
+		top: 679px;
+		width: 240px;
+		right: 0px;
+		border-top: 0;
+		z-index: 50
+	}
+
+	#line_3 {
+		position: absolute;
+		height: 263.313px;
+		left: 810px;
+		top: 400px;
+		width: 150px;
+		right: 0px;
+		animation-direction: reverse;
+		border-bottom: 0
+	}
+
+	#line_4 {
+		position: absolute;
+		height: 244px;
+		top: 670px;
+		width: 48px;
+		right: 90px;
+		animation-direction: reverse;
+		border-left: 0
+	}
+
+	#line_5 {
+		position: absolute;
+		height: 27px;
+		top: 888px;
+		width: 386px;
+		right: 157px;
+		animation-direction: reverse;
+		border-bottom: 0;
+		z-index: 20
+	}
+
+	#line_6 {
+		position: absolute;
+		height: 562px;
+		top: 922px;
+		width: 407px;
+		left: 138px;
+		animation-direction: reverse;
+		border-right: 0
+	}
+
+}
+
 @media (max-width:980px) {
-	#line_1 { box-shadow: inset 10px 0px 0px 0px white; position: relative; height: 240px; top: 420px; left: 50%; width: 40%; }
-	#line_2 { animation-direction: reverse; box-shadow: inset -10px 0px 0px 0px white; position: relative; top: 415px; height: 440px; left: 8%; width: 40%; }
-	#line_3 { animation-direction: initial; box-shadow: inset 10px 0px 0px 0px white; position: relative; height: 161px; top: 409px; left: 50%; width: 40%; }
-	#line_4 { animation-direction: reverse; box-shadow: inset -10px 0px 0px 0px white; position: relative; height: 170px; left: 8%; width: 40%; top: 500px; }
-	#line_5 { box-shadow: inset 10px 0px 0px 0px white; position: relative; height: 350px; right: 2.5vw; height: 584px; top: 496px; animation-direction: inherit; left: 50%; width: 40%; }
-	#line_6 { animation-direction: reverse; box-shadow: inset -10px 0px 0px 0px white; position: relative; height: height:350px; height: 530px; top: 490px; left: 8%; width: 40%; }
-	#line_7 { box-shadow: inset 10px 0px 0px 0px white; position: relative; height: 284px; left: 40%; width: 40%; top: 720px; animation-direction: inherit; }
+	#line_1 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 240px;
+		top: 420px;
+		left: 50%;
+		width: 40%;
+	}
+
+	#line_2 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		top: 415px;
+		height: 440px;
+		left: 8%;
+		width: 40%;
+	}
+
+	#line_3 {
+		animation-direction: initial;
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 161px;
+		top: 409px;
+		left: 50%;
+		width: 40%;
+	}
+
+	#line_4 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		height: 170px;
+		left: 8%;
+		width: 40%;
+		top: 500px;
+	}
+
+	#line_5 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 350px;
+		right: 2.5vw;
+		height: 584px;
+		top: 496px;
+		animation-direction: inherit;
+		left: 50%;
+		width: 40%;
+	}
+
+	#line_6 {
+		animation-direction: reverse;
+		box-shadow: inset -10px 0px 0px 0px white;
+		position: relative;
+		height: height:350px;
+		height: 530px;
+		top: 490px;
+		left: 8%;
+		width: 40%;
+	}
+
+	#line_7 {
+		box-shadow: inset 10px 0px 0px 0px white;
+		position: relative;
+		height: 284px;
+		left: 40%;
+		width: 40%;
+		top: 720px;
+		animation-direction: inherit;
+	}
+
 }

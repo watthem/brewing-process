@@ -24,59 +24,65 @@
     
     };
     Line = function(activeElement, nextElement) {
-        var activeCenter, activeLeft, activeTop, activeHeight, activeWidth, nextCenter, nextLeft, nextTop, tmpRight, tmpTop, topDifference;
-        this.id = activeElement.attr('id');
+
+        this.top = 5;
+        this.right = 5;
+        this.left = 5;
+        this.width = 5;
+        this.height = 5;
+        // var activeCenter, activeLeft, activeTop, activeHeight, activeWidth, nextCenter, nextLeft, nextTop, tmpRight, tmpTop, topDifference;
+        // this.id = activeElement.attr('id');
        
-        if(nextElement.length < 1){
-            nextElement = activeElement;
-        }
+        // if(nextElement.length < 1){
+        //     nextElement = activeElement;
+        // }
         
-        activeLeft = activeElement.offset().left;
-        activeWidth = activeElement.width();
-        activeHeight = activeElement.height();
-        activeTop = activeElement.offset().top;
-        nextTop = nextElement.offset().top;
-        nextLeft = nextElement.offset().left;
-        activeCenter = activeLeft + activeWidth / 2;
-        nextCenter = nextLeft - activeLeft;
-        topDifference = activeTop - nextTop;
-        tmpRight = 0;
-        if (activeTop < nextTop) {
-            tmpTop = activeTop - topDifference;
-            this.direction = 'reverse';
-            this.angle = 180;
-        } else {
-            tmpTop = activeTop - topDifference;
-            this.direction = 'forwards';
-        }
-        if (activeCenter > windowWidth * 0.8 && activeTop < windowHeight * 0.5) {
-            nextCenter = windowWidth - activeCenter - borderWidth * 4;
-            topDifference = nextTop - activeTop;
-        }
-        if (activeLeft > nextLeft && activeTop > activeHeight) {
-            nextCenter = activeLeft - nextLeft;
-            activeCenter = nextLeft + nextElement.width() / 2;
-        }
-        if (activeTop > windowHeight * 0.75) {
-            tmpTop = activeTop -= topDifference + borderWidth * 2;
-            nextCenter = activeLeft - nextLeft - borderWidth * 2;
-            tmpRight = windowWidth - activeCenter - nextCenter - borderWidth * 2;
-            activeCenter = null;
-        }
-        if (topDifference < 0) {
-            topDifference = Math.abs(topDifference);
-        }
-        if (nextCenter < 5) {
-            tmpTop = activeTop - topDifference;
-            nextCenter = null;
-            tmpRight = windowWidth - activeTop
-        }
+        // activeLeft = activeElement.offset().left;
+        // activeWidth = activeElement.width();
+        // activeHeight = activeElement.height();
+        // activeTop = activeElement.offset().top;
+        // nextTop = nextElement.offset().top;
+        // nextLeft = nextElement.offset().left;
+        // activeCenter = activeLeft + activeWidth / 2;
+        // nextCenter = nextLeft - activeLeft;
+        // topDifference = activeTop - nextTop;
+        // tmpRight = 0;
+        // if (activeTop < nextTop) {
+        //     tmpTop = activeTop - topDifference;
+        //     this.direction = 'reverse';
+        //     this.angle = 180;
+        // } else {
+        //     tmpTop = activeTop - topDifference;
+        //     this.direction = 'forwards';
+        // }
+        // if (activeCenter > windowWidth * 0.8 && activeTop < windowHeight * 0.5) {
+        //     nextCenter = windowWidth - activeCenter - borderWidth * 4;
+        //     topDifference = nextTop - activeTop;
+        // }
+        // if (activeLeft > nextLeft && activeTop > activeHeight) {
+        //     nextCenter = activeLeft - nextLeft;
+        //     activeCenter = nextLeft + nextElement.width() / 2;
+        // }
+        // if (activeTop > windowHeight * 0.75) {
+        //     tmpTop = activeTop -= topDifference + borderWidth * 2;
+        //     nextCenter = activeLeft - nextLeft - borderWidth * 2;
+        //     tmpRight = windowWidth - activeCenter - nextCenter - borderWidth * 2;
+        //     activeCenter = null;
+        // }
+        // if (topDifference < 0) {
+        //     topDifference = Math.abs(topDifference);
+        // }
+        // if (nextCenter < 5) {
+        //     tmpTop = activeTop - topDifference;
+        //     nextCenter = null;
+        //     tmpRight = windowWidth - activeTop
+        // }
        
-        this.top = tmpTop;
-        this.right = tmpRight;
-        this.left = activeCenter;
-        this.width = nextCenter;
-        this.height = topDifference;
+        // this.top = tmpTop;
+        // this.right = tmpRight;
+        // this.left = activeCenter;
+        // this.width = nextCenter;
+        // this.height = topDifference;
     };
     jQuery.fn.showHoverText = function() {
         var text;
