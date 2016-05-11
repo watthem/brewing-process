@@ -12,6 +12,95 @@
 	z-index: 0
 }
 
+.connect-line {
+	position: relative;
+}
+
+.connect-line:before {
+	content: '';
+	position: relative;
+	left: 50%;
+	top: -100px;
+	width: 93%;
+	height: 100%;
+	background-color: transparent;
+	background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+	background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+	animation: border-dance 3s 3 forwards;
+	border: 0px;
+	padding: 10px;
+	position: absolute;
+	transition: background-position 2s;
+	z-index: 0;
+}
+
+.grain-mill > .connect-line:before {
+	box-shadow: inset -10px -10px 0px 10px white;
+	top: -260%;
+	height: 280%;
+}
+
+.mash-lauter-tun > .connect-line:before {
+	box-shadow: inset 0px 10px 0px 0px white;
+	top: 0%;
+	height: 94%;
+	animation-direction: reverse;
+}
+
+.sour-tun-kettle > .connect-line:before {
+	box-shadow: inset 0px -10px 0px 0px white;
+	top: 0%;
+	height: 40%;
+	left: 50%;
+	width: 100%;
+}
+
+.miu > .connect-line:before {
+	box-shadow: inset 10px -10px 0px 0px white;
+	top: 5%;
+	height: 90%;
+	left: 35%;
+	width: 50%;
+	z-index: -100;
+}
+
+.fermenter > .connect-line:before {
+	top: -36%;
+	height: 34%;
+	left: 95%;
+	width: 20%;
+	background-color: transparent;
+	background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+	background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+}
+
+.bright-tank > .connect-line:before {
+	top: -11%;
+	height: 55%;
+	left: 45%;
+	width: 208%;
+	background-color: transparent;
+	background: linear-gradient(90deg, #f48375 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+	background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+	animation-direction: reverse;
+}
+
+.canning-line > .connect-line:before {
+	display:none;
+	background-color: transparent;
+	background: linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(90deg, transparent 50%, transparent 50%), linear-gradient(0deg, #f48375 50%, transparent 50%), linear-gradient(0deg, transparent 50%, transparent 50%);
+	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+	background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+	animation-direction: reverse;
+}
+
 @keyframes border-dance {
 	0% {
 		background-position: 0 0, 500px 100%, 0 150px, 100% 0
@@ -21,69 +110,6 @@
 		background-position: 500px 0, 0 100%, 0 0, 100% 150px
 	}
 
-}
-
-#svg_canvas {
-	position: absolute;
-	opacity: .5;
-	top: 0;
-	left: 11%;
-	width: 78%;
-	height: 100%;
-}
-
-#line_1 {
-    position: absolute;
-    top: 250px;
-    height: 250px;
-    left: 24em;
-    width: 11.5em;
-    box-shadow: inset 0px -10px 0px 1px white;
-}
-
-#line_2 {
-	animation-direction: reverse;
-	border-top: 0;
-	box-shadow: inset 0px 4px 0px 0px white;
-	height: 90px;
-	left: 725px;
-	right: 0px;
-	top: 889px;
-	width: 210px;
-	z-index: 0
-}
-
-#line_3 {
-	box-shadow: inset 0px -10px 0px 1px white;
-	height: 274px;
-	left: 948px;
-	right: 0px;
-	top: 575px;
-	width: 330px
-}
-
-#line_4 {
-	box-shadow: inset 10px 0px 0px 0px white;
-	height: 317px;
-	right: 400px;
-	top: 843px;
-	width: 197px
-}
-
-#line_5 {
-	animation-direction: reverse;
-	box-shadow: inset 0px -10px 0px 0px white;
-	height: 27px;
-	right: 629px;
-	top: 1086px;
-	width: 364px
-}
-
-#line_6 {
-	box-shadow: inset 10px 10px 0px 0px white;
-	height: 85px;
-	top: 1325px;
-	width: 460px
 }
 
 @media (max-width:1200px) {
